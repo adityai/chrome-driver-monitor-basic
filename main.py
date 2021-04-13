@@ -15,7 +15,7 @@ print("---" + last_version + "---")
 print("---" + contents + "---")
 f.close()
 if last_version != contents:
-    f1 = open("/Users/adityai/chromedriver.txt", "w+")
+    f1 = open("/home/cabox/chromedriver.txt", "w+")
     f1.write(contents)
     f1.close()
     sys.exit(-1)
