@@ -9,7 +9,7 @@ ctx.verify_mode = ssl.CERT_NONE
 contents = urllib.request.urlopen("https://chromedriver.storage.googleapis.com/LATEST_RELEASE", context=ctx).read()
 contents = contents.decode("utf-8")
 
-f = open("/Users/adityai/chromedriver.txt", "r")
+f = open("/home/cabox/chromedriver.txt", "r")
 last_version = f.read()
 print("---" + last_version + "---")
 print("---" + contents + "---")
