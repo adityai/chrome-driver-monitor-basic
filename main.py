@@ -22,9 +22,8 @@ last_version = f.read()
 print("---" + last_version + "---")
 print("---" + result + "---")
 f.close()
-if last_version != contents:
+if last_version != result:
     f1 = open("chromedriver.txt", "w+")
     f1.write(result)
     f1.close()
     sys.exit(-1)
-
