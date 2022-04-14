@@ -10,7 +10,7 @@ ctx.verify_mode = ssl.CERT_NONE
 contents = urllib.request.urlopen("https://chromedriver.chromium.org/downloads", context=ctx).read()
 contents = contents.decode("utf-8")
 
-matchobj = re.search("ChromeDriver.+[0-9]\..*", "If you are using Chrome version 95, please download ChromeDriver 95.0.4638.17")
+matchobj = re.search("ChromeDriver.+[0-9]\..*", content)
 if matchobj:
  result = matchobj.group(0)
 else:
